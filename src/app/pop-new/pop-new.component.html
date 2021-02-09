@@ -1,0 +1,61 @@
+<div class="row">
+  <div class="col-12 col-sm-6">
+    <div class="form-group">
+      <label>Nom du pop :</label>
+      <br>
+      <input type="text" class="form-control" [(ngModel)]="pop.name">
+    </div>
+  </div>
+  <div class="col-12 col-sm-2">
+    <div class="form-group">
+      <label>Numéro : </label>
+      <br>
+      <input type="number" class="form-control" [(ngModel)]="pop.number">
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12 col-sm-6">
+    <div class="form-group">
+      <label>Image du pop :</label>
+      <br>
+      <input type="text" class="form-control" [(ngModel)]="pop.image">
+    </div>
+  </div>
+  <div class="col-12 col-sm-6">
+    <div class="form-group">
+      <label>Licence du pop :</label>
+      <br>
+      <input type="text" class="form-control" [(ngModel)]="pop.licence">
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12 col-sm-6">
+    <div class="form-group">
+      <label>Taille du pop : </label>
+      <br>
+      <input type="text" class="form-control" [(ngModel)]="pop.size">
+    </div>
+  </div>
+  <div class="col-12 col-sm-6">
+    <div class="form-group">
+      <label>Edition : </label>
+      <br>
+      <input type="text" class="form-control" [(ngModel)]="pop.edition">
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <div class="submit">
+      <button class="btn btn-outline-success" (click)="add()">Envoyer</button>
+    </div>
+  </div>
+</div>
+
+<div class="row change" *ngIf="create">
+  <div class="col-12">
+      Le pop a bien été enregistré
+  </div>
+</div>

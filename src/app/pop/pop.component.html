@@ -1,0 +1,22 @@
+<div class="container text-center mt-3 mb-3">
+  <div class="row align-items-center col-12">
+    <div class="col-sm-0 popImage">
+      <img src={{popImage}} alt={{popName}}>
+    </div>
+    <div class="row col-sm-10">
+      <div class="col-sm-8">
+        {{popName}} <br/>
+        Numéro : {{popNumber}} <br/>
+        Licence : {{popLicence}}
+      </div>
+      <div class="col-sm-4">
+        Taille : {{popSize}} <br/>
+        Edition : {{popEdition}}
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <a [routerLink]="['/modif',id]" class="btn btn-warning">M</a>
+    <button (click)="supr()" class="btn btn-danger">X</button>
+  </div>
+</div>

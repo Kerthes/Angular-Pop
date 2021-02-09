@@ -1,0 +1,12 @@
+<ul class="list-group">
+  <app-pop *ngFor="let pop of pops; let i = index"
+  [popName]=pop.data.name
+  [popImage]=pop.data.image
+  [popEdition]=pop.data.edition
+  [popLicence]=pop.data.licence
+  [popNumber]=pop.data.number
+  [popSize]=pop.data.size
+  [id]=pop.id
+  [index] = i>
+  </app-pop>
+</ul>
